@@ -1,27 +1,40 @@
 # PhotoAlbum
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+Angular project which demonstrates photography website. The application showcases my captured moments and my designs.
+<br/>
+<br/>
 
-## Development server
+### _About the project_
+The photography website consists of following components
+* Home : Contains carousel and cards presentation
+* Portfolio : Displays all my works on photography
+* About : Its about me
+* Contact : Sample form and social network demo integrations
+<br/>
+<br/>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### _Technologies implemented_
+* Angular, Typescript usage for application 
+* Components designed using HTML and CSS
+* Dependency injection of Service and Utility classes
+* Bootstrap for responsive design
+<br/>
+<br/>
 
-## Code scaffolding
+---
+### _This is how it looks like_
+<br/>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Home](./screenshots/Home.jpg)
 
-## Build
+<br/>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Home](./screenshots/Portfolio.jpg)
 
-## Running unit tests
+<br/>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Home](./screenshots/About.jpg)
 
-## Running end-to-end tests
+<br/>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Home](./screenshots/Contact.jpg)
