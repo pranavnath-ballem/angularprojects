@@ -1,0 +1,107 @@
+
+<div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item" *ngFor="let imgs of carouselImages" [ngClass]="{active: isImgsActive(imgs)}">
+                    <img src="assets/Images/Home/{{ imgs.imgName }}" class="img-fluid d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block mycaption">
+                        <h5>{{ imgs.imgTitle }}</h5>
+                        <p>{{ imgs.imgDesc }}</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Quote -->
+
+<div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <blockquote class="blockquote">
+            <p>“Taking an image, freezing a moment, reveals how rich reality truly is.”</p>
+            <footer class="blockquote-footer"><cite title="Source Title">Anonymous</cite></footer>
+        </blockquote>
+    </div>
+</div>
+
+<!-- Info -->
+
+<div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <h4 class="info-header">Coffee</h4>
+                <i class="bi bi-cup-fill"></i>
+                <p class="info-para">300+ cups</p>
+            </div>
+            <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <h4 class="info-header">Work Hours</h4>
+                <i class="bi bi-stopwatch-fill"></i>
+                <p class="info-para">1200+</p>
+            </div>
+            <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <h4 class="info-header">Awards</h4>
+                <i class="bi bi-award-fill"></i>
+                <p class="info-para">3</p>
+            </div>
+            <div class="info col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <h4 class="info-header">Work Experience</h4>
+                <i class="bi bi-calendar-check-fill"></i>
+                <p class="info-para">2+ Years</p>
+            </div>
+    </div>
+</div>
+
+<!-- Photography Types -->
+
+<div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card-info col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card card-1">
+                <a href="#" target="_blank">
+                    <img src="assets/Images/Portfolio/boats.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Landscape Photography</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-info col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card card-2">
+                <a href="#" target="_blank">
+                    <img src="assets/Images/Portfolio/Light trails.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Street Photography</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-info col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card card-3">
+                <a href="#" target="_blank">
+                    <img src="assets/Images/Portfolio/Apple Watch.jpg" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Product Photography</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quos nobis quia impedit, repudiandae sequi debitis unde molestias odit, autem dignissimos nisi nostrum repellendus assumenda vero temporibus magni nihil voluptatem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

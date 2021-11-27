@@ -1,0 +1,22 @@
+.container-fluid-imggal .row {
+    position: relative;
+    margin-top: 70px;
+}
+
+.container-fluid-imggal .row img:hover {
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 0.5s filter;
+}
+
+.selected {
+    cursor: pointer;
+    filter: blur(5px);
+    transition: 0.5s filter;
+}
+
+
+.container-fluid-imggal .row img {
+    height: 400px;
+    object-fit: cover;
+}

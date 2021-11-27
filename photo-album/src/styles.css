@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+:root {
+    --navHeight: 70px;
+    --sage: #D2CCA1;
+    --paleSpringBud: #DEDABA;
+    --goldCrayola: #E5C687;
+    --richBlackForeground: #0F1A20;
+    --white: #f8f8f8;
+    --black: #222;
+    --msuGreen: #2D4739;
+    --gray: #eee;
+    --lightfill: invert(78%) sepia(62%) saturate(253%) hue-rotate(353deg) brightness(94%) contrast(90%);
+    --darkfill: invert(22%) sepia(17%) saturate(869%) hue-rotate(95deg) brightness(93%) contrast(86%);
+}
+
+.light-theme {
+    --themeDropDownBg: var(--goldCrayola);
+    --themeIconBorderColor: var(--sage);
+    --navBg: var(--sage);
+    --navLinkHoverBg: var(--msuGreen);
+    --mainBg: var(--goldCrayola);
+    --fontColor: var(--black);
+    --fill: var(--lightfill);
+}
+
+.dark-theme {
+    --themeDropDownBg: var(--msuGreen);
+    --themeIconBorderColor: var(--richBlackForeground);
+    --navBg: var(--richBlackForeground);
+    --navLinkHoverBg: var(--paleSpringBud);
+    --mainBg: var(--msuGreen);
+    --fontColor: var(--white);
+    --fill: var(--darkfill);
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--fontColor);
+}
+
+body {
+    font-family: 'poppins',sans-serif;
+    background-color: var(--mainBg);
+}
+
+/* Common */
+
+.container-fluid .row {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width:992px){
+    /* .carousel-item .carousel-caption {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    } */
+    #brand-logo {
+        width: 40px;
+        height: 40px;
+        fill: var(--fontColor);
+    }
+    .container-fluid .row .card-info .card-2 {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #brand-logo {
+        width: 40px;
+        height: 40px;
+        fill: var(--fontColor);
+    }
+    /* .carousel-item .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    } */
+    .mycaption{
+        background: rgba(171, 195, 196, 0.37);
+        width: 70%;
+        margin: 0 auto;
+        height: 120px;
+        border-radius: 20px;
+    }
+    .container-fluid .row .card-info .card-1, .container-fluid .row .card-info .card-3 {
+        margin-right: 5px;
+    }
+    .container-fluid .row .card-info .card-2 {
+        margin-left: 5px;
+    }
+    .container-fluid .row .card-info .card-3 {
+        margin-top: 10px;
+    }
+}

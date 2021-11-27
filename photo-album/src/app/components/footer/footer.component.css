@@ -1,0 +1,27 @@
+.container-fluid-footer {
+    padding: 0;
+}
+
+.container-fluid-footer .row {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
+.container-fluid-footer .row .page-footer {
+    width: 100%;
+    height: 64px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--navBg);
+}
+
+.container-fluid-footer .row .footer-copyright, .footer-copyright a {
+    color: var(--fontColor);
+}

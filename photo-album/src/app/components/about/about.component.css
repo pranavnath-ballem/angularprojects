@@ -1,0 +1,44 @@
+.container-fluid-about {
+    padding: 0;
+}
+
+.container-fluid-about .row {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
+.container-fluid-about .row #img-about {
+    margin-top: 70px;
+    display: block;
+}
+
+.container-fluid-about .row .about {
+    position: absolute;
+    background: var(--mainBg);
+    color: var(--fontColor);
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    left: 65%;
+    top: 30%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width:576px) {
+    .container-fluid-about .row .about {
+        position: absolute;
+        width: 30%;
+        height: 300px;
+        margin: 0 auto;
+        left: 65%;
+        top: 20%;
+        overflow-y: scroll;
+    }
+    .container-fluid-about .row .about::-webkit-scrollbar {
+        display: none;
+    }
+}

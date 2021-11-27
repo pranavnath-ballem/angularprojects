@@ -1,0 +1,54 @@
+.navbar {
+    min-height: 64px;
+}
+
+#brand-logo {
+    width: 50px;
+    height: 50px;
+    fill: var(--fontColor);
+}
+
+#theme {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    height: var(--navHeight);
+    background-color: var(--navBg);
+}
+
+.navbar a {
+    color: var(--fontColor);
+}
+
+.navbar .nav-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--navLinkHoverBg);
+    transition: 0.3s width;
+}
+
+.navbar .nav-item a:hover::after {
+    width: 100%;
+    transition: 0.3s width;
+}
+
+.navbar .nav-item .active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--navLinkHoverBg);
+}
+
+.mydropdown{
+    background: var(--navBg);
+    border-radius: 20px;
+}

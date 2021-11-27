@@ -1,0 +1,29 @@
+.container-fluid-cont .row {
+    margin-top: 80px;
+}
+
+.container-fluid-cont .row .uform {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: rgba(209, 209, 209, 0.7);
+    margin-bottom: 10px;
+}
+
+.container-fluid .row .socials {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.container-fluid .row .socials a {
+    color: var(--fontColor);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.container-fluid .row .socials i {
+    color: var(--fontColor);
+    font-style: normal;
+}

@@ -1,0 +1,7 @@
+<div class="container-fluid-imggal col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-lg-4 col-md-12 mb-lg-0" *ngFor="let image of images; let i = index">
+            <img src="assets/Images/Portfolio/{{ image }}" class="w-100 h-20 shadow-1-strong rounded my-4" alt="" (click)="imageOnClick(i)" [ngClass]="{selected:i==selectedIndex}"/>
+        </div>
+    </div>
+</div>

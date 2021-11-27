@@ -1,0 +1,130 @@
+/* Carousel */
+
+#myCarousel {
+    margin-top: 70px;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon:hover {
+    cursor: pointer;
+}
+
+.carousel-control-next-icon:hover {
+    cursor: pointer;
+}
+
+
+/* Quote */
+
+.container-fluid .row blockquote {
+    width: 100%;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.8);
+    margin: 0px 0px;
+    padding: 50px 0;
+}
+
+.container-fluid .row blockquote p, .container-fluid .row blockquote cite {
+    color: white;
+    padding: 10px;
+}
+
+.container-fluid .row .blockquote-footer {
+    color: var(--fontColor);
+}
+
+/* Info */
+
+.container-fluid .row .info {
+    background: var(--black);
+}
+
+.container-fluid .row .info i {
+    font-size: 50px;
+    filter: var(--fill);
+    display: flex;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+.container-fluid .row .info i:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.container-fluid .row .info-header, .container-fluid .row .info-para {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    height: 50px;
+    overflow-wrap: break-word;
+}
+
+/* Photography Types */
+
+.container-fluid .row .card-info {
+    padding: 0;
+}
+
+.container-fluid .row .card {
+    padding: 10px;
+    background: rgba(185, 185, 185, 0.7);
+}
+
+.container-fluid .row .card-info:nth-child(2) {
+    margin: 0 auto;
+}
+
+.container-fluid .row .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.container-fluid .row .card .card-body .card-title {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.container-fluid .row .card .card-body .card-text {
+    font-size: 15px;
+    text-align: justify;
+    /* height: auto; */
+    height: 200px;
+    overflow: scroll;
+}
+
+.container-fluid .row .card .card-body .card-text::-webkit-scrollbar {
+    display: none;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width:576px) {
+    #brand-logo {
+        width: 40px;
+        height: 40px;
+        fill: var(--fontColor);
+    }
+    .mycaption{
+        background: rgba(135, 167, 168, 0.37);
+        width: 70%;
+        margin: 0 auto;
+        height: 120px;
+        border-radius: 20px;
+    }
+    .container-fluid .row .card-info .card-1, .container-fluid .row .card-info .card-2, .container-fluid .row .card-info .card-3{
+        margin-top: 10px;
+    }
+}
